@@ -25,4 +25,8 @@ public class Vista {
 	public static void MVenta(String producto){
 		System.out.println("Disfrute su "+producto);
 	}
+	
+	public static void MDineroDevuelto(int cant){
+		System.out.println("Se le devuelve "+cant);
+	}
 }
