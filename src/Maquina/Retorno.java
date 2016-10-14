@@ -9,7 +9,7 @@ public class Retorno extends Tecla {
 	private void Devolver(){
 		if (boton==0){
 			Controlador.DevMon();
-			Visor.MSaldo();
+			Vista.MSaldo(0);//ponemos cero, porque cuando hemos devuelto todo el dinero el "monedero" está a 0 
 		}
 	}
 }
