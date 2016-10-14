@@ -1,24 +1,27 @@
 package Maquina;
 
+import java.lang.reflect.Array;
+
 public class Dispensador {
 	private static int resto;
 	private static int precio;
 	private static int cantidad1=10;
 	private static int cantidad2=10;
+	int[] myIntArray = new int[3];
 	
 	public static void dispensar(int producto, int saldo){
 		if((precio-saldo)<=0){
 			if(producto==1){
-				Visor.MVenta("Coca-Cola");
+				Vista.MVenta("Coca-Cola");
 				cantidad1--;
 			}
 			if(producto==2){
-				Visor.MVenta("Fanta");
+				Vista.MVenta("Fanta");
 				cantidad2--;
 			} 
 			
 		}else{
-			Visor.MError();
+			Vista.MError();
 		}
 		resto=saldo;
 	}

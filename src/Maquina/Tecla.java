@@ -4,7 +4,7 @@ import java.util.Scanner;
 /** @autor Luis Martín Tallafigo Gonzalez*/
 public class Tecla {
 	
-	protected int boton = 3;
+	protected int boton = -1;
 	
 	protected void pulsar(){
 		
