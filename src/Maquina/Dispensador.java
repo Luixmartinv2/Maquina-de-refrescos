@@ -1,35 +1,28 @@
 package Maquina;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public class Dispensador {
 	private static int resto;
 	private static int precio;
-	private static int cantidad1=10;
-	private static int cantidad2=10;
-	int[] myIntArray = new int[3];
 	
-	public static void dispensar(int producto, int saldo){
-		if((precio-saldo)<=0){
-			if(producto==1){
-				Vista.MVenta("Coca-Cola");
-				cantidad1--;
-			}
-			if(producto==2){
-				Vista.MVenta("Fanta");
-				cantidad2--;
-			} 
-			
-		}else{
+	//aqui se comprueva si se puede vender el producto, si se puede se hace, sino no
+	public static void dispensar(String producto, int saldo, int cantidad) {
+		if ((precio - saldo) <= 0) {
+			Vista.MVenta(producto);
+			cantidad -= 1;
+		} else {
 			Vista.MError();
+			resto = saldo;
 		}
-		resto=saldo;
 	}
 	
-	public static int resto(){
-		int cass=(precio-resto);
+	//aqui se controla el dinero para que se reste adecuadamente del "monedero"
+	public static int resto() {
+		int cass = (precio - resto);
 		return cass;
-		
+
 	}
 
 }

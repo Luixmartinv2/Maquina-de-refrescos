@@ -22,7 +22,7 @@ public class Vista {
 		System.out.println("Muchas gracias, que tenga un buen día :)");
 	}
 	
-	public static void Mventa(String producto){
+	public static void MVenta(String producto){
 		System.out.println("Disfrute su "+producto);
 	}
 }
