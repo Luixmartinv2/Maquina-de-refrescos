@@ -1,5 +1,6 @@
 package Maquina;
 
+/** @author luis.tallafigo */
 public class Controlador {
 
 	private static int saldo;
