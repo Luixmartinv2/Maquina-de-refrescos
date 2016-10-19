@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /** @author luis.tallafigo */
-public class Deposito {
+public class DepositoTXT {
 
 	public int valor;
 	public int cantidad;
@@ -173,7 +173,7 @@ public class Deposito {
 		
 	}
 /***********************************************************/
-	public static void escribirFichero(ArrayList<Integer> listaMonedas) {
+	private static void escribirFichero(ArrayList<Integer> listaMonedas) {
 
 		//String sFichero = "listaMonedas.txt";
 
@@ -196,7 +196,7 @@ public class Deposito {
 		}
 	}
 /**********************************************************************/
-	public ArrayList<Integer> leerFichero() {
+	private ArrayList<Integer> leerFichero() {
 		ArrayList<Integer> listaMonedas = new ArrayList<Integer>();
 		File archivo = null;
 
