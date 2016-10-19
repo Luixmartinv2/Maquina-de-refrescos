@@ -175,8 +175,6 @@ public class DepositoTXT {
 /***********************************************************/
 	private static void escribirFichero(ArrayList<Integer> listaMonedas) {
 
-		//String sFichero = "listaMonedas.txt";
-
 		FileWriter fichero = null;
 		PrintWriter pw = null;
 
