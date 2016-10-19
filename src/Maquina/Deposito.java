@@ -1,5 +1,8 @@
 package Maquina;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -16,6 +19,8 @@ public class Deposito {
 	ArrayList<Integer> listaMonedas = new ArrayList<Integer>();
 	
 	public void añadir(){
+		
+		listaMonedas=leerFichero();
 		
 		 Valor[0]= 200; 
 		 Valor[1]= 100;
@@ -98,6 +103,8 @@ public class Deposito {
 	
 /*************************************************/
 	public void restar(){
+		
+		listaMonedas=leerFichero();
 		
 		 Valor[0]= 200; 
 		 Valor[1]= 100;
@@ -187,6 +194,31 @@ public class Deposito {
 		catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+/**********************************************************************/
+	public ArrayList<Integer> leerFichero() {
+		ArrayList<Integer> listaMonedas = new ArrayList<Integer>();
+		File archivo = null;
+
+		// Recorre el fichero y añadir elementos a mi arraylist
+
+		FileReader fr = null;
+		BufferedReader br = null;
+
+		try {
+			archivo = new File("ListaMonedas.txt");
+			fr = new FileReader(archivo);
+			br = new BufferedReader(fr);
+
+			Integer Linea;
+			while ((Linea = br.read()) != null) {
+				listaMonedas.add(Linea);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return listaMonedas;
 	}
 /**********************************************************************/
 	public int RestarPasta() {
