@@ -11,8 +11,8 @@ public class Deposito {
 
 	public int valor;
 	public int cantidad;
-	public Integer[] Valor = new Integer[3];
-	public Integer[] Cantidad = new Integer[3];
+	public Integer[] Valor = new Integer[5];
+	public Integer[] Cantidad = new Integer[5];
 	ArrayList<Integer> listaMonedas = new ArrayList<Integer>();
 	
 	public void añadir(){
@@ -20,6 +20,9 @@ public class Deposito {
 		 Valor[0]= 200; 
 		 Valor[1]= 100;
 		 Valor[2]= 50;
+		 Valor[3]= 20;
+		 Valor[4]= 10;
+		 Valor[5]= 5;
 		
 		if(valor==100){
 			Cantidad[1]+=1;
@@ -27,6 +30,9 @@ public class Deposito {
 			listaMonedas.get(Valor[0]+Cantidad[0]);
 			listaMonedas.get(Valor[1]+Cantidad[1]);
 			listaMonedas.get(Valor[2]+Cantidad[2]);
+			listaMonedas.get(Valor[3]+Cantidad[3]);
+			listaMonedas.get(Valor[4]+Cantidad[4]);
+			listaMonedas.get(Valor[5]+Cantidad[5]);
 			
 		} else if (valor ==200) {
 			Cantidad[0]+=1;
@@ -34,6 +40,9 @@ public class Deposito {
 			listaMonedas.get(Valor[0]+Cantidad[0]);
 			listaMonedas.get(Valor[1]+Cantidad[1]);
 			listaMonedas.get(Valor[2]+Cantidad[2]);
+			listaMonedas.get(Valor[3]+Cantidad[3]);
+			listaMonedas.get(Valor[4]+Cantidad[4]);
+			listaMonedas.get(Valor[5]+Cantidad[5]);
 			
 		} else if (valor==50){
 			Cantidad[2]+=1;
@@ -41,8 +50,44 @@ public class Deposito {
 			listaMonedas.get(Valor[0]+Cantidad[0]);
 			listaMonedas.get(Valor[1]+Cantidad[1]);
 			listaMonedas.get(Valor[2]+Cantidad[2]);
+			listaMonedas.get(Valor[3]+Cantidad[3]);
+			listaMonedas.get(Valor[4]+Cantidad[4]);
+			listaMonedas.get(Valor[5]+Cantidad[5]);
 			
-		} else{
+		} else if(valor==20){
+            Cantidad[3]+=1;
+			
+			listaMonedas.get(Valor[0]+Cantidad[0]);
+			listaMonedas.get(Valor[1]+Cantidad[1]);
+			listaMonedas.get(Valor[2]+Cantidad[2]);
+			listaMonedas.get(Valor[3]+Cantidad[3]);
+			listaMonedas.get(Valor[4]+Cantidad[4]);
+			listaMonedas.get(Valor[5]+Cantidad[5]);
+			
+			
+		}else if(valor==10){
+            Cantidad[4]+=1;
+			
+			listaMonedas.get(Valor[0]+Cantidad[0]);
+			listaMonedas.get(Valor[1]+Cantidad[1]);
+			listaMonedas.get(Valor[2]+Cantidad[2]);
+			listaMonedas.get(Valor[3]+Cantidad[3]);
+			listaMonedas.get(Valor[4]+Cantidad[4]);
+			listaMonedas.get(Valor[5]+Cantidad[5]);
+			
+			
+		}else if(valor==5){
+            Cantidad[5]+=1;
+			
+			listaMonedas.get(Valor[0]+Cantidad[0]);
+			listaMonedas.get(Valor[1]+Cantidad[1]);
+			listaMonedas.get(Valor[2]+Cantidad[2]);
+			listaMonedas.get(Valor[3]+Cantidad[3]);
+			listaMonedas.get(Valor[4]+Cantidad[4]);
+			listaMonedas.get(Valor[5]+Cantidad[5]);
+			
+			
+		}else{
 			Vista.MError();
 			
 		}
@@ -78,6 +123,39 @@ public class Deposito {
 			listaMonedas.get(Valor[0]+Cantidad[0]);
 			listaMonedas.get(Valor[1]+Cantidad[1]);
 			listaMonedas.get(Valor[2]+Cantidad[2]);
+			
+		} else if(valor==20){
+            Cantidad[3]-=1;
+			
+			listaMonedas.get(Valor[0]+Cantidad[0]);
+			listaMonedas.get(Valor[1]+Cantidad[1]);
+			listaMonedas.get(Valor[2]+Cantidad[2]);
+			listaMonedas.get(Valor[3]+Cantidad[3]);
+			listaMonedas.get(Valor[4]+Cantidad[4]);
+			listaMonedas.get(Valor[5]+Cantidad[5]);
+			
+			
+		}else if(valor==10){
+            Cantidad[4]-=1;
+			
+			listaMonedas.get(Valor[0]+Cantidad[0]);
+			listaMonedas.get(Valor[1]+Cantidad[1]);
+			listaMonedas.get(Valor[2]+Cantidad[2]);
+			listaMonedas.get(Valor[3]+Cantidad[3]);
+			listaMonedas.get(Valor[4]+Cantidad[4]);
+			listaMonedas.get(Valor[5]+Cantidad[5]);
+			
+			
+		}else if(valor==5){
+            Cantidad[5]-=1;
+			
+			listaMonedas.get(Valor[0]+Cantidad[0]);
+			listaMonedas.get(Valor[1]+Cantidad[1]);
+			listaMonedas.get(Valor[2]+Cantidad[2]);
+			listaMonedas.get(Valor[3]+Cantidad[3]);
+			listaMonedas.get(Valor[4]+Cantidad[4]);
+			listaMonedas.get(Valor[5]+Cantidad[5]);
+			
 			
 		} else{
 			Vista.MError();
